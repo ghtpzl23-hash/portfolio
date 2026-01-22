@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Art | 1:1 방문미술</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>  
+</head>
+<body>
+  <div id="event-modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>    
+      <div class="modal-body">
+        <img src="img/popup.png" alt="체험신청 50% 할인 이벤트" class="popup-img">
+      </div>
+      <div class="modal-footer">
+        <label><input type="checkbox" id="today-close"> 오늘 하루 보지 않기</label>       
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <nav class="utility">
+        <ul class="util-list">
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="mypage.html">마이페이지</a></li>
+        </ul>        
+      </nav>            
+      <div class="logo-area">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="클래스아트">
+        </a>
+      </div>
+      <div class="m-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="gnb">
+      <ul class="mobile-util">
+        <li><a href="login.html">로그인</a></li>
+        <li><a href="join.html">회원가입</a></li>
+        <li><a href="mypage.html">마이페이지</a></li>
+      </ul>
+      <ul class="main-menu">
+        <li>
+          <a href="#">클래스아트</a>
+            <ul class="submenu">
+              <li><a href="#">소개 및 비전</a></li>
+              <li><a href="#">교사소개</a></li>
+              <li><a href="#">교사지원</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">커리큘럼</a>
+            <ul class="submenu">
+              <li><a href="#">유아동미술</a></li>
+              <li><a href="#">청소년미술</a></li>
+              <li><a href="#">성인취미미술</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">체험신청&비용</a>
+            <ul class="submenu">
+              <li><a href="#">체험신청</a></li>
+              <li><a href="#">가격정책표</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">갤러리&후기</a>
+            <ul class="submenu">
+              <li><a href="#">학생작품</a></li>
+              <li><a href="#">수강생후기</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">지사안내</a>
+            <ul class="submenu">
+              <li><a href="#">개설안내</a></li>
+              <li><a href="#">개설문의</a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-visual">
+    <div class="slide-container">
+      <div class="slide-item active">
+        <img src="./img/main.slide1.png" alt="메인 슬라이드1">
+      </div>
+      <div class="slide-item">
+        <img src="./img/main.slide2.png" alt="메인 슬라이드2">
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="sec-intro">
+      <h2 class="sec-title">
+        1:1 방문미술 브랜드로 탄생한 "클래스아트"<img src="./img/circle.png" alt="">
+      </h2>
+      <div class="container">
+        <div class="item-box">
+          <div class="img-area">
+            <img src="./img/about.png" alt="클래스아트 소개">
+          </div>
+          <div class="text-area">
+            <h3><a href="#">클래스아트가 특별함을 선물할게요~</a></h3>
+            <p><a href="#">감각의 시대에 맞게 우리 친구들의 미적감각과<br>
+               예술적 시각을 높여주는 "클래스아트"를 시작하세요.</a>
+            </p>
+            <a href="#" class="btn-round">바로가기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-song">
+      <div class="container">
+        <div class="item-box reverse"> 
+          <div class="img-area">
+            <img src="./img/news.png" alt="클래스아트 테마송">
+          </div>
+          <div class="text-area">
+            <h3><a href="#">클래스아트 테마송 대공개!</a></h3>
+            <p><a href="#">클래스아트만의 테마송이 탄생했어요~</a></p>
+            <a href="#" class="btn-round">Play <span>▶</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-event">
+      <div class="container">
+        <h2 class="sec-title">
+          클래스아트 이벤트<img src="./img/circle.png" alt="">
+        </h2>
+        <div class="item-box">
+          <div class="event-card">
+            <div class="card-img">
+              <img src="./img/event.png" alt="이벤트">
+            </div>
+            <div class="card-text">
+              <p><a href="#">쓸데많은 고퀄리티 취미생활~</a></p>
+              <a href="#" class="btn-round">자세히보기</a>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="card-img">
+              <img src="./img/promotion.png" alt="프로모션">
+            </div>
+            <div class="card-text">
+              <p><a href="#">수강료 고민 끝~!</a></p>
+              <a href="#" class="btn-round">지금 신청하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="quick-call">
+    <a href="#">
+      <i class="fa-solid fa-phone"></i>
+      <span>전화문의</span>
+    </a>
+  </div>
+  <section id="faq-section" class="container">
+    <h2>자주 묻는 질문 & 이용 안내</h2>    
+    <div class="price-area">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>프로그램</th>
+            <th>대상</th>
+            <th>비용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>원데이 체험</td>
+            <td>전연령</td>
+            <td>30,000원</td>
+          </tr>
+          <tr>
+            <td>정규 클래스</td>
+            <td>전연령</td>
+            <td>120,000원 (월4회)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span>Q.</span> 수업 준비물은 무엇인가요?
+        </div>
+        <div class="faq-a">
+          기본 도구는 제공되며, 앞치마만 준비해 주세요.
+        </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q.</span> 당일 취소가 가능한가요?
+          </div>
+          <div class="faq-a">
+            수업 7일 전까지 연락 주시면 취소가 가능합니다.
+          </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <h3>CONTACT US</h3>
+          <address>
+            본사: 서울특별시 송파구 충민로66, 7층 엘 7112호 (문정동, 가든파이브라이프)<br>
+            상호: (주)클래스아트 | 대표자: 강원이<br>
+            사업자 등록번호: 385-88-02120<br>
+            통신판매신고번호: 제 2023-송파-1202호
+          </address>
+        </div>        
+        <div class="footer-links">
+          <div class="link-group">
+            <h3>NOTICE</h3>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+            <h3>Terms of Use</h3>
+            <ul>
+              <li><a href="#">이용약관</a></li>
+            </ul>
+          </div>
+          <div class="sns-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-cs">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">F&Q</a></li>          
+          </ul>
+          <p class="tel">02-2644-3310</p>
+          <p>월~금 : 10:00~19:00</p>
+          <p>카톡상담 @클래스아트</p>
+          <p>이메일 : classmentor2021@naver.com</p>
+        </div>
+      </div>
+    </div>
+    <p class="copy">&copy; 2025 클래스아트. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
