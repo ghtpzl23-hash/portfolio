@@ -27,18 +27,7 @@
     top: 15px; 
     left: 20px;
     z-index: 10;
-  }
-  .home-link a {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--text-dark);
-    text-decoration: none;
-  }
-  .home-link a i {
-    margin-right: 5px;
-    color: var(--main-color);
   }  
-  .m-home-box {display: none;}   
   .utility {
     overflow: hidden; 
     padding-right: 20px;  
@@ -68,36 +57,21 @@
     width: 100%; 
     height: auto; 
   } 
-  .container {
+   header .container {
     display: flex;
     position: relative;
     justify-content: center; 
     align-items: center;
-  }
-  .home-link {display: none;}  
+  } 
+  main .container,
+  #faq-section {
+    display: block;
+  }  
   .m-menu-btn {
     display: flex;
     position: absolute;
     left: 15px;
   }  
-  .m-home-box {
-    display: block;
-    position: absolute;
-    right: 15px;
-  }
-  .m-home-box a {
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: bold; 
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text-dark);
-  }
-  .m-home-box a i {
-    font-size: 1.4rem;
-    color: var(--main-color);
-  }
   .utility {display: none;}   
   .logo-area { 
     position: relative; 

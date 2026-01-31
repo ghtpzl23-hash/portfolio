@@ -386,21 +386,21 @@ header nav ul li a:hover {
 .ball-4 {
   width: 350px;
   bottom: 5%;
-  right: 5%;
+  right: 10%;
   opacity: 0.7;
 }
 
 .ball-5 {
   width: 550px;
   bottom: -15%;
-  left: 15%;
+  left: 25%;
   opacity: 0.8;
 }
 
 .ball-6 {
   width: 400px;
   bottom: 5%;
-  left: -10%;
+  left: -5%;
   opacity: 0.6;
 }
 
@@ -408,10 +408,13 @@ header nav ul li a:hover {
 .section-work-detail {
   display: flex;
   padding: 100px 8% 80px;
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
   align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
-  z-index: 10001;
+  z-index: 10001;    
 }
 
 .section-work-detail:nth-child(odd) {
@@ -419,18 +422,23 @@ header nav ul li a:hover {
 }
 
 .mockup-text-box {
-  margin-top: 0;
-  max-width: 550px;
-  flex: 1;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 600px; 
+  flex-shrink: 0;
+  overflow: visible;
+ /*  outline: 1px dotted red; */
 }
 
 .mockup-display {
-  flex: 2;
   display: flex;
   justify-content: center;
+  flex: 2;
+ /*  outline: 1px dotted red; */
 }
 
 .mockup-display img {
+  margin-top: 100px;
   width: 100%;
   height: auto;
   max-width: 1100px;
@@ -461,7 +469,7 @@ header nav ul li a:hover {
 
 .work-description {
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.5px;
@@ -470,15 +478,28 @@ header nav ul li a:hover {
 
 .design-system {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   flex-direction: column;
+ /*  outline: 1px dotted red; */
+}
+.info-group {
+  margin-bottom: 30px;
 }
 
+.info-group:last-child {
+  margin-bottom: 0;
+}
 .info-group strong {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 26px;
   color: var(--navy);
+}
+.btn-group {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .color-list {
@@ -523,7 +544,10 @@ header nav ul li a:hover {
   font-size: 20px;
   font-weight: 400;
 }
-
+.program {  
+  font-size: 20px;
+  font-weight: 400;
+}
 .btn-view {
   display: inline-block;
   position: relative;

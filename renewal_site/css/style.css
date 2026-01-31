@@ -63,26 +63,6 @@ body {
 /* 헤더 */
 
 header {padding-top: 10px;}
-.home-link {
-  position: absolute; 
-  top: 15px;
-  left: 0;
-  z-index: 10;
-}
-.home-link a {
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: var(--text-dark);
-  align-items: center;
-  text-decoration: none;
-}
-.home-link a i {
-  margin-right: 6px;
-  color: var(--main-color);
-  font-size: 1.1rem;
-}
-.m-home-box {display: none;}
 .utility {
   display: flex; 
   justify-content: flex-end;
@@ -104,6 +84,21 @@ header {padding-top: 10px;}
   margin-right: 4px;
   font-size: 1rem;
 }
+.utility .util-list li a {
+  display: inline-block;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 140, 105, 0.7);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255, 140, 105, 0);
+  }
+}
 .mobile-util li:first-child a i {
   color: var(--main-color);
   margin-right: 8px;
@@ -115,6 +110,8 @@ header {padding-top: 10px;}
 }
 .logo img {height: 60px;}
 .m-menu-btn {display: none;}
+
+
 
 /* 주메뉴 */
 
