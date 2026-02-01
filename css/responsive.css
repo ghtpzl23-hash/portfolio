@@ -2,6 +2,12 @@
 
 @media screen and (max-width: 767px) {
 
+	section {
+		padding: 0 5%;
+		height: auto;
+		min-height: auto;
+	}
+
 	/* header */
 	header {
 		padding: 0 20px;
@@ -20,10 +26,7 @@
 		font-size: 16px;
 	}
 
-	section {
-		padding: 0 5%;
-	}
-
+	/* home */
 	.visual {
 		display: flex;
 		position: relative;
@@ -35,7 +38,7 @@
 
 	.main-text {
 		position: static;
-		top: 0;
+		top: auto;
 		padding: 0 20px;
 		text-align: center;
 		z-index: 10;
@@ -54,15 +57,16 @@
 	.glass-ball {
 		position: absolute;
 		bottom: -30px;
-		left: 180%;
-		width: 1500px;
+		left: 50%;
+		width: 100%;
+		max-width: 100%;
 		transform: translateX(-50%);
 		animation: floatBall 4s ease-in-out infinite;
 		z-index: 5;
 	}
 
 	.glass-ball img {
-		width: 100%;
+		width: 150vw;
 		max-width: 150vw;
 	}
 
@@ -102,6 +106,8 @@
 
 	.main-about-title {
 		position: static;
+		top: auto;
+		left: auto;
 		font-size: 36px;
 		margin-bottom: 40px;
 		text-align: center;
@@ -164,6 +170,7 @@
 		filter: blur(1px);
 	}
 
+
 	/* contents */
 	.section-contents {
 		padding: 80px 20px 60px;
@@ -172,6 +179,8 @@
 
 	.main-work-title {
 		position: static;
+		top: auto;
+		left: auto;
 		margin-bottom: 40px;
 		font-size: 36px;
 		text-align: center;
@@ -190,6 +199,7 @@
 		padding: 10px 8px;
 		width: 100%;
 		font-size: 20px;
+		border-bottom: 1px solid rgba(26, 42, 58, 0.15);
 	}
 
 	.work-list li:last-child {
@@ -254,13 +264,28 @@
 	/* work-01 */
 	.section-work-detail {
 		display: flex;
-		padding: 80px 20px 60px;
+		padding: 60px 20px 50px;
+		height: auto;
+		min-height: auto;
 		flex-direction: column;
 		gap: 30px;
+		align-items: stretch;
 	}
 
 	.section-work-detail:nth-child(odd) {
 		flex-direction: column;
+	}
+
+	.mockup-display {
+		order: -1;
+		width: 100%;
+	}
+
+	.mockup-display img {
+		margin-top: 0;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
 	}
 
 	.mockup-text-box {
@@ -277,7 +302,10 @@
 
 	.work-title-area .label {
 		padding: 5px 15px;
+		min-width: auto;
+		height: auto;
 		font-size: 20px;
+		white-space: nowrap;
 	}
 
 	.brand-name {
@@ -335,16 +363,14 @@
 		text-align: center;
 	}
 
-	.mockup-display {
-		width: 100%;
+	/* work-03 */
+	.work-03 .work-title-area .label {
+		white-space: nowrap;
+		min-width: auto;
+		width: auto;
 	}
 
-	.mockup-display img {
-		margin-top: 0;
-		width: 100%;
-		max-width: 100%;
-	}
-
+	/* popup */
 	.popup-container {
 		width: 95%;
 		max-height: 95vh;
@@ -362,9 +388,14 @@
 		max-height: 95vh;
 	}
 
+	/* footer */
 	.section-footer {
 		padding: 80px 5%;
 		min-height: auto;
+	}
+
+	.footer-content {
+		margin-top: 0;
 	}
 
 	.farewell-msg h2 {
