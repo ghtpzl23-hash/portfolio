@@ -456,17 +456,17 @@ header nav ul li a:hover {
 
 .work-title-area .label {
   display: inline-block;
-  padding: 12 20px;
-  min-width: 260px;
-  height: 80px;
+  padding: 5PX 15PX;
+  min-width: auto;
+  height: auto;
   font-family: var(--font-en);
   font-size: 45px;
   line-height: 1.15;
   background: #5F7D8E;
   color: #fff;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+ /*  overflow: hidden; */
+ /*  text-overflow: ellipsis; */
 }
 
 .brand-name {

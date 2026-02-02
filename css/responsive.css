@@ -261,7 +261,7 @@
 		opacity: 0.6;
 	}
 
-	/* work-01 */
+	/* work */
 	.section-work-detail {
 		display: flex;
 		padding: 60px 20px 50px;
@@ -277,7 +277,7 @@
 	}
 
 	.mockup-display {
-		order: -1;
+		order: 1;
 		width: 100%;
 	}
 
@@ -304,8 +304,7 @@
 		padding: 5px 15px;
 		min-width: auto;
 		height: auto;
-		font-size: 20px;
-		white-space: nowrap;
+		font-size: 20px;		
 	}
 
 	.brand-name {
@@ -360,14 +359,7 @@
 		width: auto;
 		max-width: 200px;
 		font-size: 14px;
-		text-align: center;
-	}
-
-	/* work-03 */
-	.work-03 .work-title-area .label {
-		white-space: nowrap;
-		min-width: auto;
-		width: auto;
+		text-align: center;	
 	}
 
 	/* popup */
